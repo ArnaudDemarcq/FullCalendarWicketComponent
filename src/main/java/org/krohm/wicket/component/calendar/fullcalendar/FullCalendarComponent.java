@@ -1,5 +1,6 @@
 package org.krohm.wicket.component.calendar.fullcalendar;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -155,7 +156,7 @@ public class FullCalendarComponent extends LabeledWebMarkupContainer {
         return returnMap;
     }
 
-    private interface PseudoBehavior {
+    private interface PseudoBehavior extends Serializable {
 
         public void execute(Map<String, String> parameters);
     }
